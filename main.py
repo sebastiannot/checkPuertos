@@ -9,7 +9,7 @@ import smtplib
 contadorCorreo = 0
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("sorrego@tsensor.cl", "password")
+server.login("correo@dominio.cl", "password")
  
 logger = logging.getLogger('checkPuertos')
 hdlr = logging.FileHandler('/home/checkPuertos.log')
